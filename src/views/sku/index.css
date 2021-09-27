@@ -1,0 +1,26 @@
+.options {
+    display: flex;
+    padding: 20px;
+
+}
+.option {
+    display: inline-block;
+    margin-left: 20px;
+    width: 180px;
+    height: 50px;
+    border: #282c34 1px solid;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.option.disable {
+    cursor: not-allowed;
+    background: #ccc;
+}
+.option.active{
+    border: red 1px solid;
+}
+.container {
+    padding: 20px;
+}
