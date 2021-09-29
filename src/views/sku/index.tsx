@@ -20,17 +20,17 @@ class ShopAdjoin extends AdjacencyMatrix {
     this.initSimilar();
 
   }
-
-  initCommodity() {
-    this.data.forEach((item) => {
-      this.applyCommodity(item.specs);
-    });
-  }
   applyCommodity(params: string[]) {
     params.forEach((param) => {
       this.setEdge(param, params);
     });
   }
+  initCommodity() {
+    this.data.forEach((item) => {
+      this.applyCommodity(item.specs);
+    });
+  }
+
 
   initSimilar() {
     // 获得所有可选项
